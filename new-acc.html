@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dokan Shop</title>
+    <meta name="description" content="Information about Dokan Shop" />
+    <!--To Media Quaries  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- To CSS -->
+    <link rel="stylesheet" href="css/new-acc.css" />
+    <!-- To Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- To Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark px-3 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="login.html">
+          <span class="fs-3"
+            ><i class="fas fa-user-secret fs-1"></i>Dokan Shop</span
+          >
+        </a>
+        <button
+          class="navbar-toggler bg-secondary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end fw-bold"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-danger home"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#latest-products"
+                >latest products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#top-deals">Top deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="login.html">log in</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li>
+                  <a class="dropdown-item text-light" href="about-us.html"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="men.html">Men's</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="woman.html"
+                    >Women's</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="kids.html"
+                    >Kids's</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="accessories.html"
+                    >Accessories</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="contact-us.html"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mt-3 w-100 d-flex justify-content-center">
+      <div
+        class="w-50 d-flex flex-column p-3 gap-2 rounded-3 shadow-sm mb-5 bg-body-tertiary mt-5"
+      >
+        <h2 class="text-danger">Registration From</h2>
+        <form class="d-flex gap-3 flex-column flex-md-row">
+          <div class="f-n d-flex flex-column w-100">
+            <label for="first-name" class="fw-bold">First Name:</label>
+            <input
+              type="text"
+              name="f-name"
+              id="first-name"
+              class="p-1 w-100"
+            />
+          </div>
+          <div class="l-n d-flex flex-column w-100">
+            <label for="last-name" class="fw-bold">Last Name:</label>
+            <input type="text" name="l-name" id="last-name" class="p-1 w-100" />
+          </div>
+        </form>
+        <form class="d-flex gap-5 flex-column flex-md-row">
+          <div class="b-day w-100 d-flex flex-column gap-2">
+            <label for="birth-day " class="fw-bold">Birthdate :</label>
+            <input
+              type="date"
+              name="birth-day"
+              id="birth-day"
+              class="p-1 text-danger"
+            />
+          </div>
+          <div class="gend w-100">
+            <label for="gender" class="mb-2 fw-bold">Gender :</label>
+            <div class="d-flex gap-3 w-100">
+              <div class="male">
+                <input type="radio" name="gend" id="gender" />
+                <label for="gender"> Male</label>
+              </div>
+              <div class="female">
+                <input type="radio" name="gend" id="gender2" />
+                <label for="gender2">Female</label>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form class="d-flex gap-3 w-100 flex-column flex-md-row">
+          <div class="mail">
+            <label for="mail" class="fw-bold">Email :</label>
+            <input type="email" name="mail" id="mail" class="w-100" />
+          </div>
+          <div class="phone">
+            <label for="phone" class="fw-bold"> Mobile Number :</label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              class="w-100"
+              value="01"
+            />
+          </div>
+        </form>
+        <div class="conutry w-100">
+          <label for="user-conutry" class="fw-bold w-100"
+            >Select Your Conutry :
+          </label>
+          <input list="user-conutry" class="w-100" />
+          <datalist id="user-conutry">
+            <option value="Alexandria"></option>
+            <option value=" Aswan"></option>
+            <option value="Assiut"></option>
+            <option value=" Al-Sharqia"></option>
+            <option value=" Beheira"></option>
+            <option value=" Beni Suef"></option>
+            <option value="Cairo"></option>
+            <option value="Dakahlia"></option>
+            <option value="Damietta"></option>
+            <option value="Fayoum"></option>
+            <option value="Gharbia"></option>
+            <option value="Giza"></option>
+            <option value=" Ismailia"></option>
+            <option value=" Kafr el-Sheikh"></option>
+            <option value="Matrouh"></option>
+            <option value="Minya"></option>
+            <option value="Menofia"></option>
+            <option value="Port Said"></option>
+            <option value="Qualyubia"></option>
+            <option value="Qena"></option>
+            <option value="Luxor"></option>
+            <option value="Suez"></option>
+          </datalist>
+        </div>
+        <div class="d-flex gap-2">
+          <input type="checkbox" name="privcy" id="sing-up" />
+          <label for="sing-up"
+            >By signing up, you agree to the
+            <span class="text-primary">Terms of Service</span> and
+            <span class="text-primary">Privacy Policy</span>, including Cookie
+            Use.</label
+          >
+        </div>
+        <div class="d-flex flex-column align-items-start gap-2">
+          <button
+            class="border-0 bg-danger px-4 py-1 text-light acc-butt rounded-3"
+            type="reset"
+          >
+            Reset
+          </button>
+          <button
+            class="border-0 bg-danger px-3 py-1 text-light acc-butt rounded-3"
+            type="submit"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="fotter bg-dark row justify-content-evenly text-light p-3 mt-3">
+      <div class="col-10 col-md-5 col-lg-3 d-flex flex-column g-2">
+        <span class="text-center">
+          <i class="fas fa-user-secret fs-1"></i>
+        </span>
+        <h1 class="text-capitalize hover-fotter text-center">Dokan shop</h1>
+      </div>
+      <div
+        class="col-10 col-md-5 col-lg-3 d-flex flex-column gap-2 text-center text-md-start"
+      >
+        <h3 class="mb-3">Shopping & Categories</h3>
+        <a href="men.html" class="hover-fotter text-light">Men's shopping</a>
+        <a href="woman.html" class="hover-fotter text-light"
+          >Women's shopping</a
+        >
+        <a href="kids.html" class="hover-fotter text-light">Kids's shopping</a>
+        <a href="accessories.html" class="hover-fotter text-light"
+          >Accessories</a
+        >
+      </div>
+      <div
+        class="col-10 col-md-5 col-lg-3 d-flex flex-column gap-3 text-center text-md-start"
+      >
+        <h3 class="mb-3">Useful Links</h3>
+        <div class="d-flex flex-column gap-2">
+          <a href="#home" class="hover-fotter text-light">Home Page</a>
+          <a href="about-us.html" class="hover-fotter text-light">About Us</a>
+          <a href="contact-us.html" class="hover-fotter text-light">Contact</a>
+        </div>
+      </div>
+      <div
+        class="col-10 col-md-5 col-lg-3 d-flex flex-column gap-3 text-center text-md-start"
+      >
+        <h3 class="mb-3">Help & Information</h3>
+        <div class="d-flex flex-column gap-2">
+          <a href="#home" class="hover-fotter text-light">Help</a>
+          <a href="#home" class="hover-fotter text-light">FAQ'S</a>
+          <a href="#home" class="hover-fotter text-light"
+            >Track Your Shipping</a
+          >
+        </div>
+      </div>
+      <hr />
+      <p class="text-center">
+        Copyright © 2022 DokanShop Co., Ltd. All Rights Reserved.
+      </p>
+      <div class="fotter-link d-flex gap-2 justify-content-center">
+        <a
+          href="https://www.linkedin.com/in/mahmoud122tarek/"
+          class="text-light"
+        >
+          <i class="fa-brands fa-linkedin hover-fotter"></i>
+        </a>
+        <a href="" class="text-light">
+          <i class="fa-brands fa-facebook hover-fotter"></i>
+        </a>
+        <a href="" class="text-light">
+          <i class="fa-brands fa-instagram hover-fotter"></i>
+        </a>
+        <a href="" class="text-light">
+          <i class="fa-brands fa-twitter hover-fotter"></i
+        ></a>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

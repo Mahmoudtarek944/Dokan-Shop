@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dokan Shop</title>
+    <meta name="description" content="Information about Dokan Shop" />
+    <!--To Media Quaries  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- To CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- To Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- To Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div id="home">
+      <nav class="navbar navbar-expand-lg bg-dark px-3 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#home">
+            <span class="fs-3"
+              ><i class="fas fa-user-secret fs-1"></i>Dokan Shop</span
+            >
+          </a>
+          <button
+            class="navbar-toggler bg-secondary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end fw-bold"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav gap-2">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-danger home"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#latest-products"
+                  >latest products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#top-deals">Top deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="login.html">log in</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li>
+                    <a class="dropdown-item text-light" href="about-us.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="men.html"
+                      >Men's</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="woman.html"
+                      >Women's</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="kids.html"
+                      >Kids's</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="accessories.html"
+                      >Accessories</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="contact-us.html"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-bs-interval="3000"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="img-home">
+              <img
+                src="media/women-001.jpg"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-caption d-md-block content-home">
+              <h5>Women's Fashion</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-home">
+              <img
+                src="media/men-001.jpg"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-caption d-md-block content-home">
+              <h5>Men's Fashion</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-home">
+              <img
+                src="media/kid-001.jpg"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-caption d-md-block content-home">
+              <h5>Kids's Fashion</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item content-home">
+            <div class="img-home">
+              <img
+                src="media/accessories-001.jpg "
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-caption d-md-block content-home z-1">
+              <h5>Accessories</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div
+      id="latest-products"
+      class="d-flex flex-column py-5 px-2 gap-3 align-items-center text-center"
+    >
+      <h1>Latest Products</h1>
+      <h5 class="text-secondary">here , you can find our newest products</h5>
+      <div class="row gy-5 justify-content-evenly gy-lg-0">
+        <div class="col-lg-2 col-md-5 col-8 lat-pro">
+          <div class="d-flex flex-column gap-2 text-center">
+            <img src="media/women-01.jpg" alt="" />
+            <div class="d-flex justify-content-around">
+              <i class="fa-solid fa-heart fs-3 text-secondary icone-love"></i>
+              <i
+                class="fa-solid fa-cart-shopping fs-3 text-secondary icone-market"
+              ></i>
+            </div>
+            <h1 class="fs-4">New Green Jacket</h1>
+            <p class="text-secondary">EGP 290.0</p>
+            <a href="woman.html">
+              <button type="button" class="btn btn-danger butt-latest">
+                See More
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-5 col-8 lat-pro">
+          <div class="d-flex flex-column gap-2 text-center">
+            <img src="media/men-01.jpg" alt="" />
+            <div class="d-flex justify-content-around">
+              <i class="fa-solid fa-heart fs-3 text-secondary icone-love"></i>
+              <i
+                class="fa-solid fa-cart-shopping fs-3 text-secondary icone-market"
+              ></i>
+            </div>
+            <h1 class="fs-4">Classic Spring</h1>
+            <p class="text-secondary">EGP 150.0</p>
+            <a href="men.html">
+              <button type="button" class="btn btn-danger butt-latest">
+                See More
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-5 col-8 lat-pro">
+          <div class="d-flex flex-column gap-2 text-center">
+            <img src="media/kid-01.jpg" alt="" />
+            <div class="d-flex justify-content-around">
+              <i class="fa-solid fa-heart fs-3 text-secondary icone-love"></i>
+              <i
+                class="fa-solid fa-cart-shopping fs-3 text-secondary icone-market"
+              ></i>
+            </div>
+            <h1 class="fs-4">School Collection</h1>
+            <p class="text-secondary">EGP 295.0</p>
+            <a href="kids.html">
+              <button type="button" class="btn btn-danger butt-latest">
+                See More
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-5 col-8 lat-pro">
+          <div class="d-flex flex-column gap-2 text-center">
+            <img src="media/accessories-01.jpg" alt="" />
+            <div class="d-flex justify-content-around">
+              <i class="fa-solid fa-heart fs-3 text-secondary icone-love"></i>
+              <i
+                class="fa-solid fa-cart-shopping fs-3 text-secondary icone-market"
+              ></i>
+            </div>
+            <h1 class="fs-4">Accessories</h1>
+            <p class="text-secondary">EGP 85.00</p>
+            <a href="accessories.html">
+              <button type="button" class="btn btn-danger butt-latest">
+                See More
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video d-flex flex-column gap-5">
+      <div class="video-text d-flex flex-column align-items-center text-center">
+        <h1 class="fs-1 fw-bold">Dokan Shop Store</h1>
+        <p class="text-secondary">
+          This Is Our Store In Real, Don't Miss To Visit Us
+        </p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <video
+          src="media/videoplayback.mp4"
+          controls
+          class="w-75"
+          poster="media/accessories-001.jpg"
+        ></video>
+      </div>
+    </div>
+    <div id="top-deals" class="mt-5 d-flex flex-column text-center gap-4 mb-5">
+      <div class="deals-text">
+        <h1>Hot Deals</h1>
+        <p class="text-secondary">
+          searching for special things! you can find our latest deals here
+        </p>
+      </div>
+
+      <div class="row justify-content-center g-4 px-3">
+        <div class="col-lg-5 col-md-5 col-sm-10 deal">
+          <img src="media/deal-02.jpg" alt="" />
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-10 deal">
+          <img src="media/deal-03.jpg" alt="" />
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-10 deal">
+          <img src="media/deal-07.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="feedback d-flex flex-column mt-5">
+      <h1 class="text-center">feedback</h1>
+      <p class="text-secondary fs-4 text-center">
+        we will be very happy , if you subbmit you feedback for any other
+        special request
+      </p>
+      <div
+        class="d-flex justify-content-around mt-3 flex-column align-items-center align-items-lg-start flex-lg-row gap-4 gap-lg-0"
+      >
+        <form class="d-flex flex-column align-items-center gap-3 w-50">
+          <input
+            type="text"
+            name="user-name"
+            placeholder="Your Name"
+            class="p-2 w-100"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Mail"
+            class="p-2 w-100"
+          />
+          <textarea
+            name="feedback"
+            placeholder="Your placeholder"
+            cols="60"
+            rows="10"
+            class="p-2 w-100"
+          ></textarea>
+          <button class="btn btn-danger feed-butt w-50" type="submit">
+            Submit
+          </button>
+        </form>
+        <div class="feed-right d-flex flex-column g-2">
+          <div class="add">
+            <h2 class="text-decoration-underline text-danger">Address</h2>
+            <p class="text-secondary">16.B Mohandiseen, Giza, Egypt</p>
+          </div>
+          <div class="mail">
+            <h1 class="text-decoration-underline text-danger">E-mail :</h1>
+            <p class="text-secondary">dokanshop@company.com</p>
+          </div>
+          <div class="phone">
+            <h1 class="text-decoration-underline text-danger">
+              Mobile Number :
+            </h1>
+            <p class="text-secondary">+20-11-580-395-64</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fotter bg-dark row justify-content-evenly text-light p-3 mt-3">
+      <div class="col-10 col-md-5 col-lg-3 d-flex flex-column g-2">
+        <span class="text-center">
+          <i class="fas fa-user-secret fs-1"></i>
+        </span>
+        <h1 class="text-capitalize hover-fotter text-center">Dokan shop</h1>
+      </div>
+      <div
+        class="col-10 col-md-5 col-lg-3 d-flex flex-column gap-2 text-center text-md-start"
+      >
+        <h3 class="mb-3">Shopping & Categories</h3>
+        <a href="men.html" class="hover-fotter text-light">Men's shopping</a>
+        <a href="woman.html" class="hover-fotter text-light"
+          >Women's shopping</a
+        >
+        <a href="kids.html" class="hover-fotter text-light">Kids's shopping</a>
+        <a href="accessories.html" class="hover-fotter text-light"
+          >Accessories</a
+        >
+      </div>
+      <div
+        class="col-10 col-md-5 col-lg-3 d-flex flex-column gap-3 text-center text-md-start"
+      >
+        <h3 class="mb-3">Useful Links</h3>
+        <div class="d-flex flex-column gap-2">
+          <a href="#home" class="hover-fotter text-light">Home Page</a>
+          <a href="about-us.html" class="hover-fotter text-light">About Us</a>
+          <a href="contact-us.html" class="hover-fotter text-light">Contact</a>
+        </div>
+      </div>
+      <div
+        class="col-10 col-md-5 col-lg-3 d-flex flex-column gap-3 text-center text-md-start"
+      >
+        <h3 class="mb-3">Help & Information</h3>
+        <div class="d-flex flex-column gap-2">
+          <a href="#home" class="hover-fotter text-light">Help</a>
+          <a href="#home" class="hover-fotter text-light">FAQ'S</a>
+          <a href="#home" class="hover-fotter text-light"
+            >Track Your Shipping</a
+          >
+        </div>
+      </div>
+      <hr />
+      <p class="text-center">
+        Copyright © 2022 DokanShop Co., Ltd. All Rights Reserved.
+      </p>
+      <div class="fotter-link d-flex gap-2 justify-content-center">
+        <a
+          href="https://www.linkedin.com/in/mahmoud122tarek/"
+          class="text-light"
+        >
+          <i class="fa-brands fa-linkedin hover-fotter"></i>
+        </a>
+        <a href="" class="text-light">
+          <i class="fa-brands fa-facebook hover-fotter"></i>
+        </a>
+        <a href="" class="text-light">
+          <i class="fa-brands fa-instagram hover-fotter"></i>
+        </a>
+        <a href="" class="text-light">
+          <i class="fa-brands fa-twitter hover-fotter"></i
+        ></a>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
